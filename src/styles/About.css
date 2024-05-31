@@ -1,0 +1,99 @@
+#about {
+    color: var(--neo-red);
+    margin: auto;
+    width: 100%;
+    padding-top: 100px; /*top,right,bottom,left*/
+    max-width: 1000px;
+    min-height: 100vh;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility;
+}
+    .fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+  
+.about-content {
+    background-color: var(--medium-grey);
+    color: var(--oat-white);
+    font-size: calc(8px + 2vmin); /*calc(10px + 2vmin)*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-image{
+    max-width: 35%;
+    max-height: 35%;
+    min-width: 150px;
+    min-height: 75px;
+    overflow: hidden;
+    margin: 10px; 
+    border-radius: 20px;
+}
+
+.about-name {
+    color: var(--light-slate);
+    font-size: small;
+    font-weight: bolder;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.about-text {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: left; /*!!!!!!!!!!SWAP TO CENTER MAYBE !!!!!!!!!!!!!!!!!!*/
+}
+
+.button-container {
+    padding: 15px, 0, 15px, 15px, 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: left; /*!!!!!!!!!!SWAP TO CENTER MAYBE !!!!!!!!!!!!!!!!!!*/
+}
+
+.resume-button {
+    background-color: var(--neo-light-violet);
+    --bs-btn-hover-bg: var(--neo-shadow-violet);
+    --bs-btn-active-bg: var(--neo-shadow-violet);
+    --bs-btn-active-color: var(--oat-white);
+    --bs-btn-hover-color: var(--oat-white);
+    color: var(--oat-white);
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 600;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.cv-button {
+    background-color: var(--pink); 
+    --bs-btn-hover-bg: var(--dark-pink);
+    --bs-btn-active-bg: var(--dark-pink);
+    --bs-btn-active-color: var(--oat-white);
+    --bs-btn-hover-color: var(--oat-white);
+    color: var(--oat-white);
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 600;
+    padding: 10px 20px; 
+    border: none;
+    font-size:medium;
+    cursor: pointer;
+    border-radius: 5px; 
+}

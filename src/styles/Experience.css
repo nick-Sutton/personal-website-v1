@@ -1,0 +1,20 @@
+#experience {
+    color: var(--neo-shadow-violet);
+    margin: auto;
+    width: 100%;
+    padding-top: 100px;
+    max-width: 1000px;
+    min-height: 100vh;
+}
+
+.experience-content {
+    background-color: var(--medium-grey);
+    color: var(--oat-white);
+    font-size: calc(8px + 2vmin); /*calc(10px + 2vmin)*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
+
+}
