@@ -26,7 +26,7 @@ class Home extends React.Component {
           <FadeIn>
               <div className="home-content">
                 <div className="home-hello-container">
-                  <div className="home-hello">Nicholas Sutton</div>
+                  <div className="home-hello">Hello, I'm Nick.</div>
                 </div>
                 <div className="home-intro-container">
                   <div className="home-intro-item">Computer Scientist</div>

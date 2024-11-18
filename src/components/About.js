@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import "../styles/About.css";
 import meImage from '../assets/me2.jpg';
 import FadeIn from "./FadeIn";
+import AboutTabs from "./AboutTabs";
 
 class About extends React.Component {
     constructor() {
@@ -29,25 +30,26 @@ class About extends React.Component {
             </div>
             <div className="hline"/>
             <div className="about-content">
-              <img src={meImage} alt="me" className="about-image" />
               <div className="about-text">
-                I am a <b className="r">Computer Science</b> student, interested in <b className="g">Machine learning</b>, 
-                        <b className="y"> low-level-systems</b>, and <b className="b">Robotics</b>.
-                
+              <p>
+                Hello, I'm Nick. I am a Computer Science student, interested in Machine learning, low-level-systems, and Robotics.
+              </p>
+              <p>
                 My interest in computers started from a young by watching my brother play Super Mario 64 on an old CRT TV. 
                 That facination with pologyons has blesomned into a lifelong love of technology and software.
-                
+              </p>
+              <p>
                 Education:
                 -North Carolina State Unversity: BS, Computer Science
                 Technologies:
                 -C/C++,Python,Go-Lang,Java,C#,Javascript,OpenCV
-
-
-                <div className="button-container">
+              </p>
+              <div className="button-container">
                   <Button className="resume-button">Resume</Button>
                   <Button className="cv-button">CV</Button>
                 </div>
               </div>
+                <img src={meImage} alt="me" className="about-image" />
             </div>
           </FadeIn>
         </div>

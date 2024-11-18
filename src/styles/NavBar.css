@@ -33,7 +33,7 @@
   position: relative;
 }
 
-.nav-link {
+.nav-link-home {
   color: var(--oat-white);
   margin-left: 5px;
   margin-right: 5px;
@@ -43,11 +43,11 @@
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link-home:hover {
   color: var(--neo-bright-yellow);
 }
 
-.nav-link::after {
+.nav-link-home::after {
   content: '';
   opacity: 0;
   transition: width 0.2s ease, opacity 0.2s ease;
@@ -60,7 +60,103 @@
   transform: translateX(-50%);
 }
 
-.nav-link:hover::after {
+.nav-link-home:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav-link-about {
+  color: var(--oat-white);
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-about:hover {
+  color: var(--neo-red);
+}
+
+.nav-link-about::after {
+  content: '';
+  opacity: 0;
+  transition: width 0.2s ease, opacity 0.2s ease;
+  height: 10%;
+  width: 0;
+  background-color: var(--medium-slate);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link-about:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav-link-experience {
+  color: var(--oat-white);
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-experience:hover {
+  color: var(--neo-shadow-violet);
+}
+
+.nav-link-experience::after {
+  content: '';
+  opacity: 0;
+  transition: width 0.2s ease, opacity 0.2s ease;
+  height: 10%;
+  width: 0;
+  background-color: var(--medium-slate);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link-experience:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav-link-projects {
+  color: var(--oat-white);
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-projects:hover {
+  color: var(--neo-shadow-green);
+}
+
+.nav-link-projects::after {
+  content: '';
+  opacity: 0;
+  transition: width 0.2s ease, opacity 0.2s ease;
+  height: 10%;
+  width: 0;
+  background-color: var(--medium-slate);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link-projects:hover::after {
   opacity: 1;
   width: 100%;
 }
