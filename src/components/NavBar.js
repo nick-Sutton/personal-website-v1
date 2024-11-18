@@ -15,16 +15,16 @@ class NavBar extends React.Component {
                     <Navbar.Collapse id="navbarSupportedContent">
                         <Nav className="ms-auto">
                             <NavItem>
-                                <Nav.Link href="#home" className="nav-link">// Home</Nav.Link>
+                                <Nav.Link href="#home" className="nav-link-home">Home</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link href="#about" className="nav-link">// About</Nav.Link>
+                                <Nav.Link href="#about" className="nav-link-about">About</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link href="#experience" className="nav-link">// Experience</Nav.Link>
+                                <Nav.Link href="#experience" className="nav-link-experience">Experience</Nav.Link>
                             </NavItem>
                             <NavItem>
-                                <Nav.Link href="#projects" className="nav-link">// Projects</Nav.Link>
+                                <Nav.Link href="#projects" className="nav-link-projects">Projects</Nav.Link>
                             </NavItem>
                         </Nav>
 

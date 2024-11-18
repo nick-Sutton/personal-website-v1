@@ -27,7 +27,9 @@ class Experience extends React.Component {
               <ReactTyped strings={["> experience."]} typeSpeed={100} cursorChar="_"/>
             </div>
             <div className="hline"/>
-            <div className="experience-content"></div>
+            <div className="experience-content">
+              
+            </div>
             </FadeIn>
         </div>
       )
