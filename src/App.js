@@ -1,37 +1,43 @@
-import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
-import NavBar from "./components/NavBar"
-import Home from "./components/Home"
-import About from "./components/About"
-import Experience from "./components/Experience"
-import Projects from "./components/Projects"
-import Footer from "./components/Footer"
-import "./styles/Colors.css";
-//Maybe add a guestbook with auth
-//Ideas for home section
-//  -SM64 style physics sphere that people can 
-//    deform
-//Add download cv/resume to home section as a button
-//Make the Nicholas Sutton have a sort of logo designe
-//and as you scroll the name goes away and leaves just the logo
-//!!!!Add live chat feature with moderation!!!
-
-//Add page load animation 
-
-//ADD SCROLLSPY
-function App() {
-  return (
-    <div className="App">
-      <NavBar></NavBar>
-      <div id="content">
-        <Home></Home>
-        <About></About>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Footer></Footer>
-      </div>
-    </div>
-  );
-}
-
-export default App;
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link[data-section], .navbar-brand');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = this.getAttribute('data-section') || 'home';
+            
+            // Update active nav link
+            document.querySelectorAll('.nav-link.active').forEach(activeLink => {
+                activeLink.classList.remove('active');
+            });
+            this.classList.add('active');
+            
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show the target section
+            const targetElement = document.getElementById(`${targetSection}-section`);
+            if (targetElement) {
+                targetElement.classList.add('active');
+            }
+            
+            // Update URL
+            history.pushState(null, null, `#${targetSection}`);
+        });
+    });
+    
+    // Initialize first section based on URL hash or default to 'about'
+    const initialHash = window.location.hash.substring(1);
+    const initialSection = initialHash || 'about';
+    const initialLink = document.querySelector(`[data-section="${initialSection}"]`);
+    const initialSectionElement = document.getElementById(`${initialSection}-section`);
+    
+    if (initialLink) {
+        initialLink.classList.add('active');
+    }
+    if (initialSectionElement) {
+        initialSectionElement.classList.add('active');
+    }
+});

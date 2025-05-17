@@ -1,43 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Sutton Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container-fluid px-4">
+            <!--<a class="navbar-brand" href="#">Nicholas Sutton</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!--<li class="nav-item"><a class="nav-link nav-link-home" href="#home">Home</a></li>-->
+                    <li class="nav-item"><a class="nav-link nav-link-about" href="#" data-section="about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-projects" href="#" data-section="projects">Software</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-research" href="#" data-section="research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-personal" href="#" data-section="personal">Personal</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Nicholas Sutton</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="header-container">
+        <div class="header-hello">Hello, I'm Nick</div>
+        <div class="header-sub">Computer Science and Mathematics at North Carolina State University</div>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main id="content-container" class="container-fluid">
+        <!--About Section-->
+        <section id="about-section" class="about-section content-section">
+            <div id="section-title" class="about-title">> about.</div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div>I am an undergraduate student at <a href="https://www.csc.ncsu.edu/">North Carolina State University</a>, majoring in 
+                            Computer Science with a minor in Mathematics. 
+                            I currently work as an undergraduate research assistant in the <a href="https://hier-robotics.github.io/">Hier Lab</a>, 
+                            where I research Sensor Fusion and SLAM techniques for legged robots in unpredictable enviroments.
+                    </div>
+                    <br>
+                    <div>My acedimic interest include Animaloid Robots, Embodied AI, and Safe Autonomey. 
+                            I aim to develop robots to safely assist humans in challenging, dangerous, 
+                            or otherwise inaccessible tasks. Besides robotics, I am also interested in Software Systems and Programming Languages.
+                    </div>
+                    <br>
+                    <div>I am also a recipient of the <a href="https://goodnight.ncsu.edu/">Goodnight Scholarship</a>, 
+                            where I serve as a peer mentor and tutor for new transfer students.
+                    </div>
+                </div>
+                <img src="../src/assets/images/test.jpg" alt="Nicholas Sutton" class="about-headshot" loading="lazy">
+            </div>
+        </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <!--Projects Section-->
+        <section id="projects-section" class="projects-section content-section">
+            <div id="section-title" class="projects-title">> software.</div>
+            <div class="project-content">
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h4 class="card-title">Gaggle</h4>
+                        <div class="card-text">Gaggle is a web-based automatic team creation system for the Goodnight Scholars intramural sports teams.</div>
+                        <div class="flags">
+                            <div class="tech-flag">Go</div>
+                            <div class="tech-flag">JavaScript</div>
+                            <div class="tech-flag">HTML/CSS</div>
+                            <div class="tech-flag">Docker</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h4 class="card-title">Munchie Bot</h4>
+                        <div class="card-text">Munchie Bot is a Discord bot and web scraping tool for automatically updating your server when a new free game is available on the Epic Games Store.</div>
+                        <div class="flags">
+                            <div class="tech-flag">Python3</div>
+                            <div class="tech-flag">PlayWright</div>
+                            <div class="tech-flag">Discord.py</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h4 class="card-title">CatDetection</h4>
+                        <div class="card-text">CatDetection is a computer vision model and program for detecting my cats Howl and Munchie in images or videos.</div>
+                        <div class="flags">
+                            <div class="tech-flag">Python3</div>
+                            <div class="tech-flag">OpenCV</div>
+                            <div class="tech-flag">YOLOv8</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3">
+                    <div class="card-body text-primary">
+                        <h4 class="card-title">Bird Classification</h4>
+                        <div class="card-text">Bird Classification is an Image recognition model for detecting 200 bird species in images or videos.</div>
+                        <div class="flags">
+                            <div class="tech-flag">Python3</div>
+                            <div class="tech-flag">YOLOv8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--research Section-->
+        <section id="research-section" class="research-section content-section">
+            <div id="section-title" class="research-title">> research.</div>
+            <div class="research-content">
+            </div>
+        </section>
+
+        <!--personal Section-->
+        <section id="personal-section" class="personal-section content-section">
+            <div id="section-title" class="personal-title">> personal.</div>
+            <div class="personal-content">
+            </div>
+        </section>
+
+    </main>
+
+    <div class="footer-container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nicholas-sutton13/" class="social-link target="_blank">
+                <img src="../src/assets/icons/linkedin.svg" alt="Linkedin" class="social-icon" loading="lazy">
+            </a>
+            <a href="https://github.com/nick-Sutton" class="social-link" target="_blank">
+                <img src="../src/assets/icons/github.svg" alt="GitHub" class="social-icon" loading="lazy">
+            </a>
+            <a href="mailto:nicksutton46@gmail.com" class="social-link">
+                <img src="../src/assets/icons/envelope-fill.svg" alt="Email" class="social-icon" loading="lazy">
+            </a>
+        </div>
+        <div className="footer-text">Created by Nicholas Sutton. ©</div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/app.js"></script>
+</body>
 </html>
