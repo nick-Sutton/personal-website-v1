@@ -270,7 +270,7 @@ body {
 .content-section a,
 .about-me a,
 .card a {
-    color: var(--neo-blue);
+    color: var(--light-slate);
     font-weight: bold;
     text-decoration: none;
 }
@@ -278,7 +278,7 @@ body {
 /* Hover state */
 .content-section a:hover,
 .about-me a:hover {
-    color: var(--lapis);
+    color: var(--medium-slate);
     text-decoration: underline; 
 }
 
@@ -301,6 +301,18 @@ body {
     padding-right: 30px;
 }
 
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-info {
+    display: flex;
+    flex: row;
+    gap: 8px;
+}
+
 .about-headshot {
     /* flex: 0 0 auto; */
     width: 300px;
@@ -308,6 +320,25 @@ body {
     object-fit: cover;
     border-radius: 2%;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resume-link {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--oat-white)!important;
+    background-color: var(--light-slate);
+    text-decoration: none!important;
+    gap: 8px;
+    align-items: center;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: var(--medium-slate);
 }
 
 .about-text {
@@ -410,7 +441,7 @@ body {
     padding: 4px 12px;
     border: 2px solid var(--light-slate);
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--light-slate);
 
 }
 
