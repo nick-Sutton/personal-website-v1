@@ -18,10 +18,12 @@
     --neo-shadow-yellow: #FFB703;
     --neo-bright-yellow: #D3C02E;
     --lapis: #255F85;
+    --dar-lapis: #004e98;
     --pink: #F48498;
     --dark-pink: #BF6475;
     --hot-pink: #F15572;
     --purpur: #6D597A;
+    --pink: #826c7f;
 }
 
 body {
@@ -192,7 +194,7 @@ body {
 
 @media (min-width: 1500px) {
     .header-container {
-        padding: 100px 200px 20px;
+        padding: 100px 250px 20px;
     }
 }
 
@@ -251,7 +253,7 @@ body {
 
 @media (min-width: 1500px) {
     .content-section {
-        padding: 100px 200px 20px;
+        padding: 100px 250px 20px;
     }
 }
 
