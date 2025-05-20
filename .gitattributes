@@ -1,3 +1,0 @@
-# Untrack all html and css files.
-*.html linguist-documentation=true
-*.css linguist-documentation=true
