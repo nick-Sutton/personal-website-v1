@@ -176,25 +176,25 @@ body {
 
 @media (min-width: 768px) {
     .header-container {
-        padding: 100px 50px 20px;
+        padding: 100px 75px 20px;
     }
 }
 
 @media (min-width: 820px) {
     .header-container {
-        padding: 100px 75px 20px;
+        padding: 100px 100px 20px;
     }
 }
 
 @media (min-width: 1280px) {
     .header-container {
-        padding: 100px 100px 20px;
+        padding: 100px 200px 20px;
     }
 }
 
 @media (min-width: 1500px) {
     .header-container {
-        padding: 100px 250px 20px;
+        padding: 100px 400px 20px;
     }
 }
 
@@ -205,7 +205,7 @@ body {
     padding-left: 20px;
     color: var(--oat-white);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .header-sub {
@@ -215,7 +215,7 @@ body {
     padding-left: 20px;
     color: gray;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .content-container {
@@ -235,25 +235,25 @@ body {
 
 @media (min-width: 768px) {
     .content-section {
-        padding: 100px 50px 20px;
+        padding: 100px 75px 20px;
     }
 }
 
 @media (min-width: 820px) {
     .content-section {
-        padding: 100px 75px 20px;
+        padding: 100px 100px 20px;
     }
 }
 
 @media (min-width: 1280px) {
     .content-section {
-        padding: 100px 100px 20px;
+        padding: 100px 200px 20px;
     }
 }
 
 @media (min-width: 1500px) {
     .content-section {
-        padding: 100px 250px 20px;
+        padding: 100px 400px 20px;
     }
 }
 
@@ -289,7 +289,7 @@ body {
 
 .section-title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .about-content {
@@ -344,7 +344,11 @@ body {
 .about-text {
     flex: 1; /* Take remaining space */
     min-width: 300px; /* Minimum width before wrapping */
-    font-size: 18px;
+    font-size: 23px;
+}
+
+.about-text p {
+    margin-bottom: 1.5em;
 }
 
 @media (max-width: 768px) {
@@ -373,6 +377,16 @@ body {
     gap: 30px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.research-text {
+    flex: 1; /* Take remaining space */
+    min-width: 300px; /* Minimum width before wrapping */
+    font-size: 23px;
+}
+
+.research-text p {
+    margin-bottom: 1.5em;
 }
 
 /* Research Publications Styles */
@@ -438,7 +452,7 @@ body {
     align-items: center;
     transition: all 0.2s ease;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 19px;
     padding: 4px 12px;
     border: 2px solid var(--light-slate);
     border-radius: 5px;
@@ -478,19 +492,19 @@ body {
     font-style: italic;
     margin-bottom: 5px;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 21px;
 }
 
 .publication-journal {
     font-weight: 500;
     margin-bottom: 10px;
     color: var(--green);
-    font-size: 0.9rem;
+    font-size: 19px;
 }
 
 .publication-abstract {
     margin-bottom: 15px;
-    font-size: 0.95rem;
+    font-size: 21px;
     line-height: 1.5;
 }
 
@@ -560,7 +574,7 @@ body {
 .tech-flag {
     color: var(--oat-white);
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 15px;
     padding: 4px 12px;
     border: 2px solid var(--light-slate);
     border-radius: 5px;
